@@ -12,44 +12,96 @@ public class SwiftFlutterMixpanelPlugin: NSObject, FlutterPlugin {
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
     do {
           if (call.method == "initialize") {
+            
             let token = call.arguments as! String;
             print("initialize " + token);
             Mixpanel.initialize(token: token);
             result(token);
             return;
+            
           } else if(call.method == "people.setProperties") {
+            
             let arguments = call.arguments as! Dictionary<String, Any>;
-    
-            //Mixpanel.mainInstance().people.set(properties: []);
+            let properties = parseProperty(arguments: arguments);
+            Mixpanel.mainInstance().people.set(properties: properties);
           } else if(call.method == "people.setProperty") {
-            let arguments = call.arguments as! Dictionary<String, Any>;
-            let property = arguments["property"] as! String;
             
+            let arguments = call.arguments as? Dictionary<String, Any>;
+            if ( arguments == nil ) {
+                result(false);
+                return;
+            }
+            let properties = parseProperty(arguments: arguments!);
+            let property = properties["property"] as! String;
+            let to = properties["to"];
+            if ( property == nil || to == nil ) {
+                result("property must not be null");
+                return;
+            }
+
+            Mixpanel.mainInstance().people.set(property: property, to: to!);
+            result(true);
             
-            //let to = arguments["to"] as! MixpanelType;
-            Mixpanel.mainInstance().people.set(property: property, to: "123");
           } else if(call.method == "people.setOnce") {
-            let arguments = call.arguments as! Dictionary<String, MixpanelType>;
+            let arguments = call.arguments as? Dictionary<String, Any>;
+            if ( arguments == nil ) {
+                result(false);
+                return;
+            }
+            let properties = parseProperty(arguments: arguments!);
+            Mixpanel.mainInstance().people.setOnce(properties: properties );
+            result(true);
             
-            Mixpanel.mainInstance().people.setOnce(properties: arguments );
           } else if(call.method == "people.unset") {
-            let arguments = call.arguments as! Properties;
             
-            Mixpanel.mainInstance().people.setOnce(properties: arguments);
+            let arguments = call.arguments as? Dictionary<String, Any>;
+            if ( arguments == nil ) {
+                result(false);
+                return;
+            }
+            let properties = parseProperty(arguments: arguments!);
+            
+            Mixpanel.mainInstance().people.setOnce(properties: properties);
+            result(true);
+            
           } else if(call.method == "people.increment") {
-            let arguments = call.arguments as! Properties;
-            Mixpanel.mainInstance().people.increment(properties: arguments);
+            
+            let arguments = call.arguments as? Dictionary<String, Any>;
+            if ( arguments == nil ) {
+                result(false);
+                return;
+            }
+            let properties = parseProperty(arguments: arguments!);
+
+            Mixpanel.mainInstance().people.increment(properties: properties);
+            
           } else if(call.method == "people.append") {
-            let arguments = call.arguments as! Properties;
-            Mixpanel.mainInstance().people.append(properties: arguments);
+            
+            let arguments = call.arguments as? Dictionary<String, Any>;
+            if ( arguments == nil ) {
+                result(false);
+                return;
+            }
+            let properties = parseProperty(arguments: arguments!);
+            
+            Mixpanel.mainInstance().people.append(properties: properties);
+            result(true);
           } else if(call.method == "people.deleteUser") {
+            
             Mixpanel.mainInstance().people.deleteUser();
+            result(true);
+            
           } else if(call.method == "identify") {
+            
             let arguments = call.arguments as? String;
             let distinctId = arguments ?? Mixpanel.mainInstance().distinctId;
+            
             Mixpanel.mainInstance().identify(distinctId: distinctId );
+            
             result(distinctId);
+            
           } else if (call.method == "track") {
+            
             let arguments = call.arguments as! Dictionary<String, Any>?;
             if ( arguments == nil ) {
                 result("failed");
@@ -59,12 +111,15 @@ public class SwiftFlutterMixpanelPlugin: NSObject, FlutterPlugin {
             let prop = parseProperty(arguments: arguments!);
             
             Mixpanel.mainInstance().track(event: event, properties: prop);
+        
             result(event);
           } else if ( call.method == "flush" ) {
+            
             Mixpanel.mainInstance().flush();
             result(true);
+            
           } else {
-            Mixpanel.mainInstance().track(event: call.method)
+            result(FlutterMethodNotImplemented);
           }
 
           result(true)
