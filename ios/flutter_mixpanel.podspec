@@ -15,8 +15,8 @@ Flutter Mixpanel
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  # Swift 4.2
-  s.dependency 'Mixpanel-swift', '2.6.1'
+  # Swift 5
+  s.dependency 'Mixpanel-swift', '2.6.2'
   s.ios.deployment_target = '8.0'
 end
 

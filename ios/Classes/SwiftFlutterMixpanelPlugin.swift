@@ -12,15 +12,22 @@ public class SwiftFlutterMixpanelPlugin: NSObject, FlutterPlugin {
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
     do {
           if (call.method == "initialize") {
-            Mixpanel.initialize(token: call.arguments as! String)
+            let token = call.arguments as! String;
+            print("initialize " + token);
+            Mixpanel.initialize(token: token);
+            result(token);
+            return;
           } else if(call.method == "people.setProperties") {
-            let arguments = call.arguments as! Dictionary<String, MixpanelType>;
-            Mixpanel.mainInstance().people.set(properties: arguments);
+            let arguments = call.arguments as! Dictionary<String, Any>;
+    
+            //Mixpanel.mainInstance().people.set(properties: []);
           } else if(call.method == "people.setProperty") {
-            let arguments = call.arguments as! Dictionary<String, MixpanelType>;
+            let arguments = call.arguments as! Dictionary<String, Any>;
             let property = arguments["property"] as! String;
-            let to = arguments["to"]!;
-            Mixpanel.mainInstance().people.set(property: property, to: to);
+            
+            
+            //let to = arguments["to"] as! MixpanelType;
+            Mixpanel.mainInstance().people.set(property: property, to: "123");
           } else if(call.method == "people.setOnce") {
             let arguments = call.arguments as! Dictionary<String, MixpanelType>;
             
@@ -41,19 +48,67 @@ public class SwiftFlutterMixpanelPlugin: NSObject, FlutterPlugin {
             let arguments = call.arguments as? String;
             let distinctId = arguments ?? Mixpanel.mainInstance().distinctId;
             Mixpanel.mainInstance().identify(distinctId: distinctId );
+            result(distinctId);
           } else if (call.method == "track") {
-            let arguments = call.arguments as! Properties;
-            let event = arguments["__event"] as! String;
-            Mixpanel.mainInstance().track(event: event, properties: arguments);
+            let arguments = call.arguments as! Dictionary<String, Any>?;
+            if ( arguments == nil ) {
+                result("failed");
+                return;
+            }
+            let event = arguments!["__event"] as! String;
+            let prop = parseProperty(arguments: arguments!);
+            
+            Mixpanel.mainInstance().track(event: event, properties: prop);
+            result(event);
+          } else if ( call.method == "flush" ) {
+            Mixpanel.mainInstance().flush();
+            result(true);
           } else {
             Mixpanel.mainInstance().track(event: call.method)
           }
 
           result(true)
         } catch {
+            let _error = error as NSError;
+            result([FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  )]);
           print(error.localizedDescription)
-          result(false)
+            //result(error);
+
+          // result(false)
         }
      }
+    
+    func parseProperty( arguments : Dictionary<String, Any> ) -> Properties {
+        var prop :Dictionary<String, MixpanelType> = [:];
+        arguments.filter({ (key: String, value: Any) -> Bool in
+            key != "__event"
+        }).forEach({ (arg) in
+            let (key, value) = arg
+            if ( value is String ) {
+                prop[key] = value as! String;
+            } else if ( value is Int ) {
+                prop[key] = value as! Int;
+            } else if ( value is UInt ) {
+                prop[key] = value as! UInt;
+            } else if ( value is Double ) {
+                prop[key] = value as! Double;
+            } else if ( value is Float ) {
+                prop[key] = value as! Float;
+            } else if ( value is Bool ) {
+                prop[key] = value as! Bool;
+            } else if ( value is MixpanelType ) {
+                prop[key] = value as? MixpanelType;
+            } else if ( value is [String: MixpanelType] ) {
+                prop[key] = value as! [String: MixpanelType];
+            } else if ( value is URL ) {
+                prop[key] = value as! URL;
+            } else if ( value is NSNull ) {
+                prop[key] = value as! NSNull;
+            } else if ( value is NSDictionary ) {
+                prop[key] = parseProperty(arguments: value as! Dictionary<String, Any>);
+            }
+        });
+        return prop;
+    }
   }
 

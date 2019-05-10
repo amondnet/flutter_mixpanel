@@ -39,6 +39,13 @@ class _MyAppState extends State<MyApp> {
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
       await FlutterMixpanel.initialize(widget.token);
+      await FlutterMixpanel.identify("test");
+      //await FlutterMixpanel.people.set({'test': 'test'});
+      await FlutterMixpanel.track("test_event", {
+        'test': 'd',
+        'dict': {'d': 1}
+      });
+      await FlutterMixpanel.flush();
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }
