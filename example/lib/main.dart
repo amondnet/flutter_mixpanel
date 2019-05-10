@@ -4,9 +4,22 @@ import 'dart:async';
 import 'package:flutter/services.dart';
 import 'package:flutter_mixpanel/flutter_mixpanel.dart';
 
-void main() => runApp(MyApp());
+void main(List<String> args) {
+  String token = '';
+
+  if (args != null && args.isNotEmpty) {
+    token = args[0];
+  }
+  runApp(MyApp(
+    token: token,
+  ));
+}
 
 class MyApp extends StatefulWidget {
+  final String token;
+
+  const MyApp({Key key, this.token}) : super(key: key);
+
   @override
   _MyAppState createState() => _MyAppState();
 }
@@ -25,7 +38,7 @@ class _MyAppState extends State<MyApp> {
     String platformVersion;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      platformVersion = await FlutterMixpanel.platformVersion;
+      await FlutterMixpanel.initialize(widget.token);
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }

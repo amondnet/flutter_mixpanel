@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 
 class FlutterMixpanel {
   static const MethodChannel _channel =
-      const MethodChannel('net.amond/flutter_mixpanel');
+      const MethodChannel('net.amond.flutter_mixpanel');
 
   static const FlutterMixpanelPeople people = const FlutterMixpanelPeople();
 
