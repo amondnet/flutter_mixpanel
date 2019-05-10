@@ -38,8 +38,9 @@ public class SwiftFlutterMixpanelPlugin: NSObject, FlutterPlugin {
           } else if(call.method == "people.deleteUser") {
             Mixpanel.mainInstance().people.deleteUser();
           } else if(call.method == "identify") {
-            let arguments = call.arguments as? String?;
-            Mixpanel.mainInstance().identify(distinctId: arguments ?? Mixpanel.mainInstance().distinctId );
+            let arguments = call.arguments as? String;
+            let distinctId = arguments ?? Mixpanel.mainInstance().distinctId;
+            Mixpanel.mainInstance().identify(distinctId: distinctId );
           } else if (call.method == "track") {
             let arguments = call.arguments as! Properties;
             let event = arguments["__event"] as! String;
