@@ -83,7 +83,7 @@ class FlutterMixpanelPeople {
     return;
   }
 
-  Future<void> union(Map<String, dynamic> properties) async {
+  Future<void> union(Map<String, List<dynamic>> properties) async {
     await FlutterMixpanel._channel.invokeMethod('people.union', properties);
     return;
   }
