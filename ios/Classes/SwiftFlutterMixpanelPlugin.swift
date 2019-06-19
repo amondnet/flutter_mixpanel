@@ -86,6 +86,17 @@ public class SwiftFlutterMixpanelPlugin: NSObject, FlutterPlugin {
             
             Mixpanel.mainInstance().people.append(properties: properties);
             result(true);
+          } else if(call.method == "people.union") {
+            
+            let arguments = call.arguments as? Dictionary<String, Any>;
+            if ( arguments == nil ) {
+                result(false);
+                return;
+            }
+            let properties = parseProperty(arguments: arguments!);
+            
+            Mixpanel.mainInstance().people.union(properties: properties);
+            result(true);
           } else if(call.method == "people.deleteUser") {
             
             Mixpanel.mainInstance().people.deleteUser();
