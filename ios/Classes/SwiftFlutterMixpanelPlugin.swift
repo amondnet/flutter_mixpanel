@@ -124,6 +124,19 @@ public class SwiftFlutterMixpanelPlugin: NSObject, FlutterPlugin {
             Mixpanel.mainInstance().track(event: event, properties: prop);
         
             result(event);
+          } else if (call.method == "time") {
+            
+            let arguments = call.arguments as! Dictionary<String, Any>?;
+            if ( arguments == nil ) {
+                result("failed");
+                return;
+            }
+            let event = arguments!["__event"] as! String;
+            let prop = parseProperty(arguments: arguments!);
+            
+            Mixpanel.mainInstance().time(event: event);
+            
+            result(event);
           } else if ( call.method == "flush" ) {
             
             Mixpanel.mainInstance().flush();

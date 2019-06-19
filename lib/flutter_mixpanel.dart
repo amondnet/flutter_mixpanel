@@ -37,6 +37,19 @@ class FlutterMixpanel {
     }
   }
 
+  static Future<String> time(String event) async {
+    Map<String, dynamic> properties = Map();
+    properties['__event'] = event;
+    try {
+      final response = await _channel.invokeMethod('time', properties);
+      debugPrint('response : $response');
+      return response;
+    } catch (e) {
+      debugPrint('track error $e');
+      throw e;
+    }
+  }
+
   static Future<String> identify(String distinctId) async {
     final response = await _channel.invokeMethod('identify', distinctId);
     debugPrint('response : $response');
