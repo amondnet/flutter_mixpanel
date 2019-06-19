@@ -172,6 +172,22 @@ public class SwiftFlutterMixpanelPlugin: NSObject, FlutterPlugin {
                 prop[key] = value as! NSNull;
             } else if ( value is NSDictionary ) {
                 prop[key] = parseProperty(arguments: value as! Dictionary<String, Any>);
+            } else if ( value is Array<String> ) {
+                prop[key] = value as! Array<String>;
+            } else if ( value is Array<Int> ) {
+                prop[key] = value as! Array<Int>;
+            } else if ( value is Array<UInt> ) {
+                prop[key] = value as! Array<UInt>;
+            } else if ( value is Array<Double> ) {
+                prop[key] = value as! Array<Double>;
+            } else if ( value is Array<Float> ) {
+                prop[key] = value as! Array<Float>;
+            } else if ( value is Array<Bool> ) {
+                prop[key] = value as! Array<Bool>;
+            } else if ( value is Array<MixpanelType> ) {
+                prop[key] = value as! Array<MixpanelType>;
+            } else if ( value is Array<URL> ) {
+                prop[key] = value as! Array<URL>;
             }
         });
         return prop;
