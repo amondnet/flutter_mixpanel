@@ -1,8 +1,8 @@
 name: flutter_mixpanel
-description: Flutter Mixpanel
-version: 0.0.1
-author:
-homepage:
+description: Flutter Plugin for Mixpanel Native
+version: 0.0.1-dev.1
+author: Minsu Lee <amond@amond.net>
+homepage: https://github.com/amondnet/flutter_mixpanel
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
