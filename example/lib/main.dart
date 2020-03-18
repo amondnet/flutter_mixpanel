@@ -43,8 +43,14 @@ class _MyAppState extends State<MyApp> {
       //await FlutterMixpanel.people.set({'test': 'test'});
       await FlutterMixpanel.track("test_event", {
         'test': 'd',
-        'dict': {'d': 1}
+        'mapType': {'d': 1},
+        "dateType": DateTime.now(),
+        "booleanType": true
       });
+
+      await FlutterMixpanel.people.set({'boolValue': true});
+      await FlutterMixpanel.people.append('appendTest', '1');
+
       await FlutterMixpanel.flush();
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';

@@ -54,14 +54,13 @@ public class SwiftFlutterMixpanelPlugin: NSObject, FlutterPlugin {
             
           } else if(call.method == "people.unset") {
             
-            let arguments = call.arguments as? Dictionary<String, Any>;
+            let arguments = call.arguments as? [String];
             if ( arguments == nil ) {
                 result(false);
                 return;
             }
-            let properties = parseProperty(arguments: arguments!);
             
-            Mixpanel.mainInstance().people.setOnce(properties: properties);
+            Mixpanel.mainInstance().people.unset(properties: arguments!);
             result(true);
             
           } else if(call.method == "people.increment") {
@@ -118,10 +117,10 @@ public class SwiftFlutterMixpanelPlugin: NSObject, FlutterPlugin {
                 result("failed");
                 return;
             }
-            let event = arguments!["__event"] as! String;
             let prop = parseProperty(arguments: arguments!);
-            
-            Mixpanel.mainInstance().track(event: event, properties: prop);
+            let event = prop["event"] as! String;
+
+            Mixpanel.mainInstance().track(event: event, properties: prop["properties"] as? Properties);
         
             result(event);
           } else if (call.method == "time") {
@@ -131,8 +130,7 @@ public class SwiftFlutterMixpanelPlugin: NSObject, FlutterPlugin {
                 result("failed");
                 return;
             }
-            let event = arguments!["__event"] as! String;
-            let prop = parseProperty(arguments: arguments!);
+            let event = arguments!["event"] as! String;
             
             Mixpanel.mainInstance().time(event: event);
             
@@ -159,12 +157,20 @@ public class SwiftFlutterMixpanelPlugin: NSObject, FlutterPlugin {
     
     func parseProperty( arguments : Dictionary<String, Any> ) -> Properties {
         var prop :Dictionary<String, MixpanelType> = [:];
+
         arguments.filter({ (key: String, value: Any) -> Bool in
             key != "__event"
         }).forEach({ (arg) in
             let (key, value) = arg
             if ( value is String ) {
-                prop[key] = value as! String;
+                let stringValue = value as! String
+                if ( stringValue == "true" ) {
+                    prop[key] = true
+                } else if ( stringValue == "false" ) {
+                    prop[key] = false
+                } else {
+                    prop[key] = stringValue;
+                }
             } else if ( value is Int ) {
                 prop[key] = value as! Int;
             } else if ( value is UInt ) {
@@ -178,7 +184,8 @@ public class SwiftFlutterMixpanelPlugin: NSObject, FlutterPlugin {
             } else if ( value is MixpanelType ) {
                 prop[key] = value as? MixpanelType;
             } else if ( value is [String: MixpanelType] ) {
-                prop[key] = value as! [String: MixpanelType];
+                let parse = parseProperty(arguments: value as! Dictionary<String, Any>)
+                prop[key] = parse;
             } else if ( value is URL ) {
                 prop[key] = value as! URL;
             } else if ( value is NSNull ) {
