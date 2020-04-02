@@ -55,6 +55,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -219,6 +220,10 @@
       <screen x="0" y="23" width="1920" height="1021" />
     </state>
     <state x="942" y="339" key="#com.intellij.ide.util.TreeFileChooserDialog/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1585843001728" />
+    <state x="759" y="48" key="CommitChangelistDialog2" timestamp="1585848368633">
+      <screen x="0" y="23" width="1920" height="1021" />
+    </state>
+    <state x="759" y="48" key="CommitChangelistDialog2/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1585848368633" />
     <state width="1352" height="331" key="GridCell.Tab.0.bottom" timestamp="1585848306354">
       <screen x="0" y="23" width="1920" height="1021" />
     </state>
