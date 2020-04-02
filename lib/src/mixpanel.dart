@@ -1,18 +1,15 @@
 import 'dart:async';
 
 import 'package:flutter/services.dart';
+import 'package:flutter_mixpanel/src/mixpanel_message_codec.dart';
 import 'package:flutter_mixpanel/src/mixpanel_type.dart';
 
 class FlutterMixpanel {
-  static const MethodChannel _channel =
-      const MethodChannel('net.amond.flutter_mixpanel');
+  static const MethodChannel _channel = const MethodChannel(
+      'net.amond.flutter_mixpanel',
+      StandardMethodCodec(MixpanelMessageCodec()));
 
   static const FlutterMixpanelPeople people = const FlutterMixpanelPeople();
-
-  static Future<String> get platformVersion async {
-    final String version = await _channel.invokeMethod('getPlatformVersion');
-    return version;
-  }
 
   static Future<String> initialize(String token) async {
     String response = await _channel.invokeMethod('initialize', token);
@@ -66,8 +63,7 @@ class FlutterMixpanelPeople {
   }
 
   Future<void> setOnce(Map<String, dynamic> properties) async {
-    await FlutterMixpanel._channel
-        .invokeMethod('people.setOnce', parse(properties));
+    await FlutterMixpanel._channel.invokeMethod('people.setOnce', properties);
     return;
   }
 
@@ -77,12 +73,7 @@ class FlutterMixpanelPeople {
   }
 
   Future<void> append(String name, dynamic value) async {
-    dynamic append = value;
-    if (value is bool) {
-      append = value.toString();
-    }
-    await FlutterMixpanel._channel
-        .invokeMethod('people.append', {name: append});
+    await FlutterMixpanel._channel.invokeMethod('people.append', {name: value});
     return;
   }
 

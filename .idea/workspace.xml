@@ -2,56 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddf70060-5336-441f-a1e4-361c3aab6472" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/net/amond/flutter_mixpanel/MixpanelType.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/android/src/main/kotlin/net/amond/flutter_mixpanel/MixpanelType.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/lib/src/mixpanel.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/lib/src/mixpanel_type.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/test/mixpanel_type.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/tools/build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/mixpanel.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/mixpanel_type.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/mixpanel_type.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/build.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/lib/src/mixpanel_message_codec.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/mixpanel_message_codec.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/net/amond/flutter_mixpanel/FlutterMixpanelPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/net/amond/flutter_mixpanel/FlutterMixpanelPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/kotlin/net/amond/flutter_mixpanel_example/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/kotlin/net/amond/flutter_mixpanel_example/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/libraries/Dart_SDK.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/android/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/android/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/android/src/main/kotlin/net/amond/flutter_mixpanel/FlutterMixpanelPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/android/src/main/kotlin/net/amond/flutter_mixpanel/FlutterMixpanelPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/android/app/src/main/kotlin/net/amond/flutter_mixpanel_example/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/android/app/src/main/kotlin/net/amond/flutter_mixpanel_example/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/android/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/android/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/ios/Podfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/ios/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/flutter_mixpanel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/flutter_mixpanel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/ios/Classes/SwiftFlutterMixpanelPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/ios/Classes/SwiftFlutterMixpanelPlugin.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/ios/flutter_mixpanel.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/ios/flutter_mixpanel.podspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/lib/flutter_mixpanel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/lib/flutter_mixpanel.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Podfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/lib/src/mixpanel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/lib/src/mixpanel.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/lib/src/mixpanel_type.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/lib/src/mixpanel_type.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flutter_mixpanel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_mixpanel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftFlutterMixpanelPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftFlutterMixpanelPlugin.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/flutter_mixpanel.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/ios/flutter_mixpanel.podspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/flutter_mixpanel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_mixpanel.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/mixpanel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/mixpanel.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/mixpanel_type.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/mixpanel_type.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +53,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
@@ -84,7 +63,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/example" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="flutter.settings" />
+    <property name="settings.editor.selected.configurable" value="dart.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -96,7 +75,11 @@
       <recent name="$PROJECT_DIR$/test" />
     </key>
   </component>
-  <component name="RunManager" selected="Flutter.example/lib/test_main.dart">
+  <component name="RunManager" selected="Flutter.example/lib/test_main.dart (1)">
+    <configuration name="example/lib/test_main.dart (1)" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/example/lib/main.dart" />
+      <method v="2" />
+    </configuration>
     <configuration name="date" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
       <option name="testName" value="date" />
       <option name="testFile" value="$PROJECT_DIR$/test/mixpanel_type.dart" />
@@ -116,6 +99,14 @@
       <option name="testFile" value="$PROJECT_DIR$/test/mixpanel_type.dart" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Flutter.example/lib/test_main.dart" />
+      <item itemvalue="Flutter.example/lib/test_main.dart (1)" />
+      <item itemvalue="Flutter Test.date" />
+      <item itemvalue="Flutter Test.string" />
+      <item itemvalue="Flutter Test.tests in mixpanel_type.dart" />
+      <item itemvalue="Flutter Test.track" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Flutter Test.track" />
@@ -161,6 +152,7 @@
       <workItem from="1575433891361" duration="584000" />
       <workItem from="1584503869156" duration="10984000" />
       <workItem from="1584515441178" duration="1547000" />
+      <workItem from="1585838895877" duration="7121000" />
     </task>
     <task id="LOCAL-00001" summary="kotlin 1.3">
       <created>1557972281766</created>
@@ -218,42 +210,57 @@
     <option name="LAST_COMMIT_MESSAGE" value="time 추가" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="669" y="192" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584513381098">
-      <screen x="0" y="23" width="1920" height="1017" />
+    <state x="669" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585843003281">
+      <screen x="0" y="23" width="1920" height="1021" />
     </state>
     <state x="669" y="192" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.23.1920.1057/0.23.1920.1017@0.23.1920.1017" timestamp="1584513381098" />
-    <state width="1510" height="287" key="GridCell.Tab.0.bottom" timestamp="1584517241420">
-      <screen x="0" y="23" width="1920" height="1016" />
+    <state x="669" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1585843003281" />
+    <state x="942" y="339" key="#com.intellij.ide.util.TreeFileChooserDialog" timestamp="1585843001728">
+      <screen x="0" y="23" width="1920" height="1021" />
+    </state>
+    <state x="942" y="339" key="#com.intellij.ide.util.TreeFileChooserDialog/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1585843001728" />
+    <state width="1352" height="331" key="GridCell.Tab.0.bottom" timestamp="1585848306354">
+      <screen x="0" y="23" width="1920" height="1021" />
     </state>
     <state width="1548" height="404" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1920.1015@0.23.1920.1015" timestamp="1584514091847" />
     <state width="1510" height="287" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1920.1016@0.23.1920.1016" timestamp="1584517241420" />
     <state width="1387" height="287" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1920.1017@0.23.1920.1017" timestamp="1584516087851" />
-    <state width="1510" height="287" key="GridCell.Tab.0.center" timestamp="1584517241419">
-      <screen x="0" y="23" width="1920" height="1016" />
+    <state width="1352" height="331" key="GridCell.Tab.0.bottom/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1585848306354" />
+    <state width="1352" height="331" key="GridCell.Tab.0.center" timestamp="1585848306353">
+      <screen x="0" y="23" width="1920" height="1021" />
     </state>
     <state width="1548" height="404" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1920.1015@0.23.1920.1015" timestamp="1584514091847" />
     <state width="1510" height="287" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1920.1016@0.23.1920.1016" timestamp="1584517241419" />
     <state width="1387" height="287" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1920.1017@0.23.1920.1017" timestamp="1584516087850" />
-    <state width="1510" height="287" key="GridCell.Tab.0.left" timestamp="1584517241419">
-      <screen x="0" y="23" width="1920" height="1016" />
+    <state width="1352" height="331" key="GridCell.Tab.0.center/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1585848306353" />
+    <state width="1352" height="331" key="GridCell.Tab.0.left" timestamp="1585848306353">
+      <screen x="0" y="23" width="1920" height="1021" />
     </state>
     <state width="1548" height="404" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1920.1015@0.23.1920.1015" timestamp="1584514091847" />
     <state width="1510" height="287" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1920.1016@0.23.1920.1016" timestamp="1584517241419" />
     <state width="1387" height="287" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1920.1017@0.23.1920.1017" timestamp="1584516087850" />
-    <state width="1510" height="287" key="GridCell.Tab.0.right" timestamp="1584517241420">
-      <screen x="0" y="23" width="1920" height="1016" />
+    <state width="1352" height="331" key="GridCell.Tab.0.left/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1585848306353" />
+    <state width="1352" height="331" key="GridCell.Tab.0.right" timestamp="1585848306354">
+      <screen x="0" y="23" width="1920" height="1021" />
     </state>
     <state width="1548" height="404" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1920.1015@0.23.1920.1015" timestamp="1584514091847" />
     <state width="1510" height="287" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1920.1016@0.23.1920.1016" timestamp="1584517241420" />
     <state width="1387" height="287" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1920.1017@0.23.1920.1017" timestamp="1584516087851" />
-    <state x="594" y="169" key="SettingsEditor" timestamp="1584515482861">
-      <screen x="0" y="23" width="1920" height="1017" />
+    <state width="1352" height="331" key="GridCell.Tab.0.right/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1585848306354" />
+    <state x="594" y="170" key="SettingsEditor" timestamp="1585840089890">
+      <screen x="0" y="23" width="1920" height="1021" />
     </state>
     <state x="594" y="169" key="SettingsEditor/-1920.23.1920.1057/0.23.1920.1017@0.23.1920.1017" timestamp="1584515482861" />
-    <state x="964" y="247" key="search.everywhere.popup" timestamp="1584511944743">
-      <screen x="0" y="23" width="1920" height="1017" />
+    <state x="594" y="170" key="SettingsEditor/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1585840089890" />
+    <state x="844" y="274" width="659" height="518" key="find.popup" timestamp="1585847384288">
+      <screen x="0" y="23" width="1920" height="1021" />
+    </state>
+    <state x="844" y="274" width="659" height="518" key="find.popup/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1585847384288" />
+    <state x="964" y="248" width="670" height="676" key="search.everywhere.popup" timestamp="1585847858655">
+      <screen x="0" y="23" width="1920" height="1021" />
     </state>
     <state x="964" y="247" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1920.1017@0.23.1920.1017" timestamp="1584511944743" />
+    <state x="964" y="248" width="670" height="676" key="search.everywhere.popup/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1585847858655" />
   </component>
   <component name="masterDetails">
     <states>

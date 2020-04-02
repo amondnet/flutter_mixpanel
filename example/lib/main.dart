@@ -1,15 +1,16 @@
-import 'package:flutter/material.dart';
 import 'dart:async';
 
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_mixpanel/flutter_mixpanel.dart';
 
 void main(List<String> args) {
-  String token = '';
+  String token = 'b861b1f9e51d3eb4f4e8de98d978f748';
 
+  /*
   if (args != null && args.isNotEmpty) {
     token = args[0];
-  }
+  }*/
   runApp(MyApp(
     token: token,
   ));
