@@ -32,8 +32,8 @@ public class FlutterMixpanelPlugin(
 
   override fun onDetachedFromEngine(binding: FlutterPlugin.FlutterPluginBinding) {
     mixpanel?.flush()
-    mixpanel = null
-    context = null
+    //mixpanel = null
+    //context = null
   }
 
   // This static function is optional and equivalent to onAttachedToEngine. It supports the old
@@ -99,16 +99,27 @@ public class FlutterMixpanelPlugin(
       }
       "people.setProperties" -> {
         mixpanel?.let {
-          val properties = call.arguments as Map<String, Any>?
-          it.people.set(properties?.toMixpanelProperties())
+          val properties = call.arguments as Map<String, Any>
+          //it.people.set(properties.toMixpanelProperties())
+          it.people.setMap(properties)
+          return result.success(null)
+        }
+        return result.error("NOT_INITIALIZED", null, null)
+      }
+      "people.setProperty" -> {
+        mixpanel?.let {
+          val properties = call.arguments as Map<String, Any>
+          val property = properties["property"] as String
+          val to = properties["to"]
+          it.people.set(property,to)
           return result.success(null)
         }
         return result.error("NOT_INITIALIZED", null, null)
       }
       "people.setOnce" -> {
         mixpanel?.let {
-          val properties = call.arguments as Map<String, Any>?
-          it.people.setOnce(properties?.toMixpanelProperties())
+          val properties = call.arguments as Map<String, Any>
+          it.people.setOnce(properties.toMixpanelProperties())
           return result.success(null)
         }
         return result.error("NOT_INITIALIZED", null, null)
@@ -167,11 +178,11 @@ public class MixpanelMessageCodec : StandardMessageCodec() {
     @JvmStatic
     val instance = MixpanelMessageCodec()
     @JvmStatic
-    private val UTF8: Charset = Charset.forName("UTF8")
+    val UTF8: Charset = Charset.forName("UTF8")
     @JvmStatic
-    private val DATE_TIME = 128
+    val DATE_TIME = 128
     @JvmStatic
-    private val URI = 129
+    val URI = 129
   }
   override fun writeValue(stream: ByteArrayOutputStream, value: Any?) {
     if (value is Date) {

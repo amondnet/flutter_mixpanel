@@ -1,35 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddf70060-5336-441f-a1e4-361c3aab6472" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/lib/src/mixpanel_message_codec.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/mixpanel_message_codec.dart" afterDir="false" />
+    <list default="true" id="ddf70060-5336-441f-a1e4-361c3aab6472" name="Default Changelist" comment="feat: android">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/net/amond/flutter_mixpanel/FlutterMixpanelPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/net/amond/flutter_mixpanel/FlutterMixpanelPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/kotlin/net/amond/flutter_mixpanel_example/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/kotlin/net/amond/flutter_mixpanel_example/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/gradle.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/android/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/android/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/android/src/main/kotlin/net/amond/flutter_mixpanel/FlutterMixpanelPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/android/src/main/kotlin/net/amond/flutter_mixpanel/FlutterMixpanelPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/android/app/src/main/kotlin/net/amond/flutter_mixpanel_example/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/android/app/src/main/kotlin/net/amond/flutter_mixpanel_example/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/android/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/flutter_mixpanel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/flutter_mixpanel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/ios/Classes/SwiftFlutterMixpanelPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/ios/Classes/SwiftFlutterMixpanelPlugin.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/lib/src/mixpanel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/lib/src/mixpanel.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/lib/src/mixpanel_type.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/lib/src/mixpanel_type.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_mixpanel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_mixpanel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftFlutterMixpanelPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftFlutterMixpanelPlugin.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/mixpanel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/mixpanel.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/mixpanel_type.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/mixpanel_type.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +131,9 @@
       <workItem from="1575433891361" duration="584000" />
       <workItem from="1584503869156" duration="10984000" />
       <workItem from="1584515441178" duration="1547000" />
-      <workItem from="1585838895877" duration="7121000" />
+      <workItem from="1585838895877" duration="7373000" />
+      <workItem from="1585991925352" duration="1159000" />
+      <workItem from="1586005796441" duration="2461000" />
     </task>
     <task id="LOCAL-00001" summary="kotlin 1.3">
       <created>1557972281766</created>
@@ -197,18 +177,28 @@
       <option name="project" value="LOCAL" />
       <updated>1560922473459</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: android">
+      <created>1585848390941</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585848390941</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="kotlin 1.3" />
     <MESSAGE value="people union 추가" />
     <MESSAGE value="people union 추가 array" />
     <MESSAGE value="time 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="time 추가" />
+    <MESSAGE value="feat: android" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: android" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="669" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585843003281">
@@ -220,43 +210,55 @@
       <screen x="0" y="23" width="1920" height="1021" />
     </state>
     <state x="942" y="339" key="#com.intellij.ide.util.TreeFileChooserDialog/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1585843001728" />
-    <state x="759" y="48" key="CommitChangelistDialog2" timestamp="1585848368633">
+    <state x="759" y="48" key="CommitChangelistDialog2" timestamp="1585848475260">
       <screen x="0" y="23" width="1920" height="1021" />
     </state>
-    <state x="759" y="48" key="CommitChangelistDialog2/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1585848368633" />
-    <state width="1352" height="331" key="GridCell.Tab.0.bottom" timestamp="1585848306354">
-      <screen x="0" y="23" width="1920" height="1021" />
+    <state x="759" y="48" key="CommitChangelistDialog2/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1585848475260" />
+    <state width="1122" height="290" key="GridCell.Tab.0.bottom" timestamp="1586008605504">
+      <screen x="0" y="23" width="1680" height="991" />
     </state>
     <state width="1548" height="404" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1920.1015@0.23.1920.1015" timestamp="1584514091847" />
     <state width="1510" height="287" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1920.1016@0.23.1920.1016" timestamp="1584517241420" />
     <state width="1387" height="287" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1920.1017@0.23.1920.1017" timestamp="1584516087851" />
-    <state width="1352" height="331" key="GridCell.Tab.0.bottom/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1585848306354" />
-    <state width="1352" height="331" key="GridCell.Tab.0.center" timestamp="1585848306353">
-      <screen x="0" y="23" width="1920" height="1021" />
+    <state width="1122" height="290" key="GridCell.Tab.0.bottom/0.23.1680.991@0.23.1680.991" timestamp="1586008605504" />
+    <state width="1352" height="331" key="GridCell.Tab.0.bottom/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1585848574172" />
+    <state width="1122" height="290" key="GridCell.Tab.0.center" timestamp="1586008605503">
+      <screen x="0" y="23" width="1680" height="991" />
     </state>
     <state width="1548" height="404" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1920.1015@0.23.1920.1015" timestamp="1584514091847" />
     <state width="1510" height="287" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1920.1016@0.23.1920.1016" timestamp="1584517241419" />
     <state width="1387" height="287" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1920.1017@0.23.1920.1017" timestamp="1584516087850" />
-    <state width="1352" height="331" key="GridCell.Tab.0.center/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1585848306353" />
-    <state width="1352" height="331" key="GridCell.Tab.0.left" timestamp="1585848306353">
-      <screen x="0" y="23" width="1920" height="1021" />
+    <state width="1122" height="290" key="GridCell.Tab.0.center/0.23.1680.991@0.23.1680.991" timestamp="1586008605503" />
+    <state width="1352" height="331" key="GridCell.Tab.0.center/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1585848574172" />
+    <state width="1122" height="290" key="GridCell.Tab.0.left" timestamp="1586008605502">
+      <screen x="0" y="23" width="1680" height="991" />
     </state>
     <state width="1548" height="404" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1920.1015@0.23.1920.1015" timestamp="1584514091847" />
     <state width="1510" height="287" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1920.1016@0.23.1920.1016" timestamp="1584517241419" />
     <state width="1387" height="287" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1920.1017@0.23.1920.1017" timestamp="1584516087850" />
-    <state width="1352" height="331" key="GridCell.Tab.0.left/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1585848306353" />
-    <state width="1352" height="331" key="GridCell.Tab.0.right" timestamp="1585848306354">
-      <screen x="0" y="23" width="1920" height="1021" />
+    <state width="1122" height="290" key="GridCell.Tab.0.left/0.23.1680.991@0.23.1680.991" timestamp="1586008605502" />
+    <state width="1352" height="331" key="GridCell.Tab.0.left/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1585848574171" />
+    <state width="1122" height="290" key="GridCell.Tab.0.right" timestamp="1586008605503">
+      <screen x="0" y="23" width="1680" height="991" />
     </state>
     <state width="1548" height="404" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1920.1015@0.23.1920.1015" timestamp="1584514091847" />
     <state width="1510" height="287" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1920.1016@0.23.1920.1016" timestamp="1584517241420" />
     <state width="1387" height="287" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1920.1017@0.23.1920.1017" timestamp="1584516087851" />
-    <state width="1352" height="331" key="GridCell.Tab.0.right/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1585848306354" />
+    <state width="1122" height="290" key="GridCell.Tab.0.right/0.23.1680.991@0.23.1680.991" timestamp="1586008605503" />
+    <state width="1352" height="331" key="GridCell.Tab.0.right/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1585848574172" />
+    <state x="685" y="139" key="NewModule_or_Project.wizard" timestamp="1585992141099">
+      <screen x="0" y="23" width="1680" height="991" />
+    </state>
+    <state x="685" y="139" key="NewModule_or_Project.wizard/0.23.1680.991@0.23.1680.991" timestamp="1585992141098" />
     <state x="594" y="170" key="SettingsEditor" timestamp="1585840089890">
       <screen x="0" y="23" width="1920" height="1021" />
     </state>
     <state x="594" y="169" key="SettingsEditor/-1920.23.1920.1057/0.23.1920.1017@0.23.1920.1017" timestamp="1584515482861" />
     <state x="594" y="170" key="SettingsEditor/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1585840089890" />
+    <state x="774" y="269" key="Vcs.Push.Dialog.v2" timestamp="1585848392537">
+      <screen x="0" y="23" width="1920" height="1021" />
+    </state>
+    <state x="774" y="269" key="Vcs.Push.Dialog.v2/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1585848392537" />
     <state x="844" y="274" width="659" height="518" key="find.popup" timestamp="1585847384288">
       <screen x="0" y="23" width="1920" height="1021" />
     </state>
