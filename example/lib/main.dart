@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_mixpanel/flutter_mixpanel.dart';
 
 void main(List<String> args) {
-  String token = 'b861b1f9e51d3eb4f4e8de98d978f748';
+  String token = 'bb2dad1143b6e62f0437b2b44bf1d820';
 
   /*
   if (args != null && args.isNotEmpty) {
@@ -40,12 +40,20 @@ class _MyAppState extends State<MyApp> {
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
       await FlutterMixpanel.initialize(widget.token);
-      await FlutterMixpanel.identify("test");
-      //await FlutterMixpanel.people.set({'test': 'test'});
+      await FlutterMixpanel.identify("test2");
+      await FlutterMixpanel.people.set({'test': 'test2'});
+      await FlutterMixpanel.people.setProperty('setProperyTest', 'ok');
+
+      await FlutterMixpanel.people.set({'\$name': 'test2'});
+      await FlutterMixpanel.people.set({'\$email': 'test@amond.net'});
+
+      //await FlutterMixpanel.people.set({'test': DateTime.now()});
+
       await FlutterMixpanel.track("test_event", {
         'test': 'd',
         'mapType': {'d': 1},
         "dateType": DateTime.now(),
+        'uri': Uri.parse('https://google.co.kr'),
         "booleanType": true
       });
 
