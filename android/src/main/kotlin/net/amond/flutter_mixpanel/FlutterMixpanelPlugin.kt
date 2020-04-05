@@ -97,6 +97,15 @@ public class FlutterMixpanelPlugin(
         }
         return result.error("NOT_INITIALIZED", null, null)
       }
+      "people.identify" -> {
+        mixpanel?.let {
+          val id = call.arguments as String
+          //it.people.set(properties.toMixpanelProperties())
+          it.people.identify(id)
+          return result.success(null)
+        }
+        return result.error("NOT_INITIALIZED", null, null)
+      }
       "people.setProperties" -> {
         mixpanel?.let {
           val properties = call.arguments as Map<String, Any>

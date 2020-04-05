@@ -50,6 +50,13 @@ class FlutterMixpanel {
 class FlutterMixpanelPeople {
   const FlutterMixpanelPeople();
 
+  // identify must be called before
+  // user profile properties can be set
+  Future<void> identify(String id) async {
+    await FlutterMixpanel._channel.invokeMethod('people.identify', id);
+    return;
+  }
+
   Future<void> set(Map<String, dynamic> properties) async {
     await FlutterMixpanel._channel
         .invokeMethod('people.setProperties', properties);

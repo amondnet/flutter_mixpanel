@@ -41,8 +41,12 @@ class _MyAppState extends State<MyApp> {
     try {
       await FlutterMixpanel.initialize(widget.token);
       await FlutterMixpanel.identify("test2");
-      await FlutterMixpanel.people.set({'test': 'test2'});
+      await FlutterMixpanel.people.identify('test2');
+
+      await FlutterMixpanel.people.set({'test2': 'test2'});
       await FlutterMixpanel.people.setProperty('setProperyTest', 'ok');
+      await FlutterMixpanel.people.setProperty('peopleBool', true);
+      await FlutterMixpanel.people.append('append', 1);
 
       await FlutterMixpanel.people.set({'\$name': 'test2'});
       await FlutterMixpanel.people.set({'\$email': 'test@amond.net'});
