@@ -3,17 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="ddf70060-5336-441f-a1e4-361c3aab6472" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/tools/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/tool/build.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/tool/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/ios/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/ios/Classes/SwiftFlutterMixpanelPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/ios/Classes/SwiftFlutterMixpanelPlugin.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/ios/flutter_mixpanel.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/ios/flutter_mixpanel.podspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftFlutterMixpanelPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftFlutterMixpanelPlugin.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/flutter_mixpanel.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/ios/flutter_mixpanel.podspec" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +60,11 @@
       <recent name="$PROJECT_DIR$/test" />
     </key>
   </component>
-  <component name="RunManager" selected="Flutter.example/lib/test_main.dart">
+  <component name="RunManager" selected="Flutter.main.dart">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/example/lib/main.dart" />
+      <method v="2" />
+    </configuration>
     <configuration name="date" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
       <option name="testName" value="date" />
       <option name="testFile" value="$PROJECT_DIR$/test/mixpanel_type.dart" />
@@ -78,8 +84,17 @@
       <option name="testFile" value="$PROJECT_DIR$/test/mixpanel_type.dart" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Flutter.example/lib/test_main.dart" />
+      <item itemvalue="Flutter Test.date" />
+      <item itemvalue="Flutter Test.string" />
+      <item itemvalue="Flutter Test.tests in mixpanel_type.dart" />
+      <item itemvalue="Flutter Test.track" />
+      <item itemvalue="Flutter.main.dart" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Flutter.main.dart" />
         <item itemvalue="Flutter Test.track" />
         <item itemvalue="Flutter Test.date" />
         <item itemvalue="Flutter Test.tests in mixpanel_type.dart" />
@@ -178,38 +193,43 @@
     <option name="LAST_COMMIT_MESSAGE" value="feat: android" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="669" y="192" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584513381098">
-      <screen x="0" y="23" width="1920" height="1017" />
+    <state x="585" y="188" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590184890532">
+      <screen x="0" y="23" width="1680" height="991" />
     </state>
     <state x="669" y="192" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.23.1920.1057/0.23.1920.1017@0.23.1920.1017" timestamp="1584513381098" />
+    <state x="585" y="188" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.991@0.23.1680.991" timestamp="1590184890532" />
     <state x="699" y="131" key="CommitChangelistDialog2" timestamp="1584517343876">
       <screen x="0" y="23" width="1920" height="1016" />
     </state>
     <state x="699" y="131" key="CommitChangelistDialog2/-1920.23.1920.1057/0.23.1920.1016@0.23.1920.1016" timestamp="1584517343876" />
-    <state width="1510" height="287" key="GridCell.Tab.0.bottom" timestamp="1584517366673">
-      <screen x="0" y="23" width="1920" height="1016" />
+    <state width="1232" height="304" key="GridCell.Tab.0.bottom" timestamp="1590184947112">
+      <screen x="0" y="23" width="1680" height="991" />
     </state>
     <state width="1548" height="404" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1920.1015@0.23.1920.1015" timestamp="1584514091847" />
     <state width="1510" height="287" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1920.1016@0.23.1920.1016" timestamp="1584517366673" />
     <state width="1387" height="287" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1920.1017@0.23.1920.1017" timestamp="1584516087851" />
-    <state width="1510" height="287" key="GridCell.Tab.0.center" timestamp="1584517366672">
-      <screen x="0" y="23" width="1920" height="1016" />
+    <state width="1232" height="304" key="GridCell.Tab.0.bottom/0.23.1680.991@0.23.1680.991" timestamp="1590184947112" />
+    <state width="1232" height="304" key="GridCell.Tab.0.center" timestamp="1590184947112">
+      <screen x="0" y="23" width="1680" height="991" />
     </state>
     <state width="1548" height="404" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1920.1015@0.23.1920.1015" timestamp="1584514091847" />
     <state width="1510" height="287" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1920.1016@0.23.1920.1016" timestamp="1584517366672" />
     <state width="1387" height="287" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1920.1017@0.23.1920.1017" timestamp="1584516087850" />
-    <state width="1510" height="287" key="GridCell.Tab.0.left" timestamp="1584517366672">
-      <screen x="0" y="23" width="1920" height="1016" />
+    <state width="1232" height="304" key="GridCell.Tab.0.center/0.23.1680.991@0.23.1680.991" timestamp="1590184947112" />
+    <state width="1232" height="304" key="GridCell.Tab.0.left" timestamp="1590184947111">
+      <screen x="0" y="23" width="1680" height="991" />
     </state>
     <state width="1548" height="404" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1920.1015@0.23.1920.1015" timestamp="1584514091847" />
     <state width="1510" height="287" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1920.1016@0.23.1920.1016" timestamp="1584517366672" />
     <state width="1387" height="287" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1920.1017@0.23.1920.1017" timestamp="1584516087850" />
-    <state width="1510" height="287" key="GridCell.Tab.0.right" timestamp="1584517366672">
-      <screen x="0" y="23" width="1920" height="1016" />
+    <state width="1232" height="304" key="GridCell.Tab.0.left/0.23.1680.991@0.23.1680.991" timestamp="1590184947111" />
+    <state width="1232" height="304" key="GridCell.Tab.0.right" timestamp="1590184947112">
+      <screen x="0" y="23" width="1680" height="991" />
     </state>
     <state width="1548" height="404" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1920.1015@0.23.1920.1015" timestamp="1584514091847" />
     <state width="1510" height="287" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1920.1016@0.23.1920.1016" timestamp="1584517366672" />
     <state width="1387" height="287" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1920.1017@0.23.1920.1017" timestamp="1584516087851" />
+    <state width="1232" height="304" key="GridCell.Tab.0.right/0.23.1680.991@0.23.1680.991" timestamp="1590184947112" />
     <state x="594" y="169" key="SettingsEditor" timestamp="1584515482861">
       <screen x="0" y="23" width="1920" height="1017" />
     </state>

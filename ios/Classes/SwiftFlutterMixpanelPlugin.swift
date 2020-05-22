@@ -2,10 +2,85 @@ import Flutter
 import UIKit
 import Mixpanel
 
+func getFlutterError(error: NSError?) -> FlutterError? {
+    if ( error == nil ) {
+        return nil;
+    } else {
+        return FlutterError(code: String(format: "%ld", error!.code), message: error!.domain, details: error!.localizedDescription)
+    }
+    
+}
+
+
+let DATE_TIME: UInt8 = 128
+let URI: UInt8 = 129
+let BOOL_TRUE: UInt8 = 1
+let BOOL_FALSE: UInt8 = 2
+
+public class MixpanelReader : FlutterStandardReader {
+    public override func readValue(ofType type: UInt8) -> Any? {
+        switch type {
+            case DATE_TIME:
+                var value: Int64 = 0
+                readBytes(&value, length: 8)
+                return Date(timeIntervalSince1970: TimeInterval(value / 1000 ))
+            case URI:
+                let urlString = readUTF8()
+                return URL(string: urlString)
+            case BOOL_TRUE:
+                return true
+            case BOOL_FALSE:
+                return false
+            default:
+                return super.readValue(ofType: type)
+        }
+    }
+}
+
+public class MixpanelWriter : FlutterStandardWriter {
+    override public func writeValue(_ value: Any) {
+        if ( value is Date ) {
+            writeByte(DATE_TIME)
+            let date = value as! Date
+            let time = date.timeIntervalSince1970
+            var ms = time * 1000.0
+            writeBytes(&ms, length: 8)
+        } else if ( value is URL ) {
+            let url = value as! URL
+            let urlString = url.absoluteString
+            writeByte(URI)
+            writeUTF8(urlString)
+        } else if (value is Bool ) {
+            if ( value ) as! Bool {
+                writeByte(BOOL_TRUE)
+            } else {
+                writeByte(BOOL_FALSE)
+            }
+        }
+        else {
+            super.writeValue(value)
+        }
+    }
+}
+
+public class MixpanelReaderWriter : FlutterStandardReaderWriter {
+    public override func writer(with data: NSMutableData) -> FlutterStandardWriter {
+        return MixpanelWriter(data: data)
+    }
+    public override func reader(with data: Data) -> FlutterStandardReader {
+        return MixpanelReader(data: data)
+    }
+}
+
+
+
 public class SwiftFlutterMixpanelPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let mixpanelReaderWriter = MixpanelReaderWriter()
-    let channel = FlutterMethodChannel(name: "net.amond.flutter_mixpanel", binaryMessenger: registrar.messenger(), codec: FlutterStandardMethodCodec(readerWriter: mixpanelReaderWriter))
+    let readWriter = MixpanelReaderWriter()
+    //let readWriter = FlutterStandardReaderWriter()
+    let codec = FlutterStandardMethodCodec(readerWriter: readWriter)
+    let channel = FlutterMethodChannel(name: "net.amond.flutter_mixpanel", binaryMessenger: registrar.messenger(), codec: codec)
+
     let instance = SwiftFlutterMixpanelPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
@@ -33,17 +108,26 @@ public class SwiftFlutterMixpanelPlugin: NSObject, FlutterPlugin {
                 return;
             }
             let properties = parseProperty(arguments: arguments!);
-            let property = properties["property"] as! String;
+            let property = properties["property"] as? String;
             let to = properties["to"];
             if ( property == nil || to == nil ) {
                 result("property must not be null");
                 return;
             }
 
-            Mixpanel.mainInstance().people.set(property: property, to: to!);
+            Mixpanel.mainInstance().people.set(property: property!, to: to!);
             result(true);
             
-          } else if(call.method == "people.setOnce") {
+          } else if(call.method == "people.identify") {
+            let arguments = call.arguments as? String;
+                      let distinctId = arguments ?? Mixpanel.mainInstance().distinctId;
+                      
+                      Mixpanel.mainInstance().identify(distinctId: distinctId );
+                      
+                      result(distinctId);
+                     
+          }
+          else if(call.method == "people.setOnce") {
             let arguments = call.arguments as? Dictionary<String, Any>;
             if ( arguments == nil ) {
                 result(false);
@@ -215,56 +299,3 @@ public class SwiftFlutterMixpanelPlugin: NSObject, FlutterPlugin {
     }
   }
 
-
-let DATE_TIME: UInt8 = 128
-let URI: UInt8 = 129
-let BOOL_TRUE: UInt8 = 1
-let BOOL_FALSE: UInt8 = 2
-
-public class MixpanelReader : FlutterStandardReader {
-    public override func readValue(ofType type: UInt8) -> Any? {
-        switch type {
-        case DATE_TIME:
-            var value: Int64 = 0
-            readBytes(&value, length: 8)
-            return Date(timeIntervalSince1970: TimeInterval(value))
-        case URI:
-            let urlString = readUTF8()
-            return URL(string: urlString)
-        case BOOL_TRUE:
-            return true
-        case BOOL_FALSE:
-            return false
-        default:
-            return super.readValue(ofType: type)
-        }
-    }
-}
-
-public class MixpanelWriter : FlutterStandardWriter {
-    override public func writeValue(_ value: Any) {
-        if ( value is Date ) {
-            writeByte(DATE_TIME)
-            let date = value as! Date
-            let time = date.timeIntervalSince1970
-            var ms = time * 1000.0
-            writeBytes(&ms, length: 8)
-        } else if ( value is URL ) {
-            let url = value as! URL
-            let urlString = url.absoluteString
-            writeByte(URI)
-            writeUTF8(urlString)
-        } else {
-            super.writeValue(value)
-        }
-    }
-}
-
-public class MixpanelReaderWriter : FlutterStandardReaderWriter {
-    public override func writer(with data: NSMutableData) -> FlutterStandardWriter {
-        return MixpanelWriter()
-    }
-    public override func reader(with data: Data) -> FlutterStandardReader {
-        return MixpanelReader()
-    }
-}
