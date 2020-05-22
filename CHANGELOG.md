@@ -1,3 +1,7 @@
+## 0.1.0+1
+
+- fix: ios crash
+
 ## 0.1.0
 
 - feat: android implementation
