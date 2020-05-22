@@ -12,9 +12,12 @@ Flutter Mixpanel Plugin using Mixpanel SDK
 - swift 4.2
 - support bool type 
 
-## Features
+## Supported Data Type
 
-- [x] android 
-- [x] ios 
-- [x] ios bool type
-- [x] 
+- String
+- Numeric
+- Boolean
+- Date
+- List
+- Uri
+
