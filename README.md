@@ -8,8 +8,8 @@ Flutter Mixpanel Plugin using Mixpanel SDK
 
 ## iOS
 
-- mixpanel sdk: [mixpanel-swift:2.7.0](https://github.com/mixpanel/mixpanel-swift/releases/tag/v2.7.0)
-- swift 4.2
+- mixpanel sdk: [mixpanel-swift:2.7.2](https://github.com/mixpanel/mixpanel-swift/releases/tag/v2.7.2)
+- swift 5
 - support bool type 
 
 ## Supported Data Type
