@@ -42,6 +42,11 @@ class FlutterMixpanel {
     return response;
   }
 
+  static Future<void> reset() async {
+    final response = await _channel.invokeMethod('reset');
+    return response;
+  }
+
   static Future<void> flush() async {
     return await _channel.invokeMethod('flush', {});
   }

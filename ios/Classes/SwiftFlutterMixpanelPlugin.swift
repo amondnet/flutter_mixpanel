@@ -225,6 +225,11 @@ public class SwiftFlutterMixpanelPlugin: NSObject, FlutterPlugin {
             Mixpanel.mainInstance().flush();
             result(true);
             
+          } else if ( call.method == "reset" ) {
+
+            Mixpanel.mainInstance().reset();
+            result(true);
+
           } else {
             result(FlutterMethodNotImplemented);
           }
