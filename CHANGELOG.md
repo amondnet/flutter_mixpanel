@@ -1,3 +1,7 @@
+## 0.2.0
+
+- feature: reset 
+
 ## 0.1.0+1
 
 - fix: ios crash

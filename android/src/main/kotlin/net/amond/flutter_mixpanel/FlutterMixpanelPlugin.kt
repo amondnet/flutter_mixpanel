@@ -97,6 +97,13 @@ public class FlutterMixpanelPlugin(
         }
         return result.error("NOT_INITIALIZED", null, null)
       }
+      "reset" -> {
+        mixpanel?.let {
+          it.reset()
+          return result.success(null)
+        }
+        return result.error("NOT_INITIALIZED", null, null)
+      }
       "people.identify" -> {
         mixpanel?.let {
           val id = call.arguments as String
