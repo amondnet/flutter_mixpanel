@@ -1,7 +1,12 @@
+## 0.2.0+1
+
+- fix: reset error
+
 ## 0.2.0
 
 - feature: reset 
-- flutter: ">=1.12.0 <2.0.0"
+- chore(deps): flutter ">=1.12.0 <2.0.0"
+
 ## 0.1.0+1
 
 - fix: ios crash

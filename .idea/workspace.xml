@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ddf70060-5336-441f-a1e4-361c3aab6472" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +20,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
     <option name="recentBranches">
       <RecentBranches>
         <option name="branchesForRepo">
@@ -41,6 +44,10 @@
         </option>
       </RecentBranches>
     </option>
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="aws" />
+    <option name="namespace" value="default" />
   </component>
   <component name="ProjectId" id="1UVFWfYl0aWfIhgr6RiuVGCbDws" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -128,6 +135,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -153,6 +161,7 @@
       <workItem from="1584503869156" duration="10984000" />
       <workItem from="1584515441178" duration="1850000" />
       <workItem from="1589342027933" duration="1882000" />
+      <workItem from="1597207972912" duration="1372000" />
     </task>
     <task id="LOCAL-00001" summary="kotlin 1.3">
       <created>1557972281766</created>
@@ -210,11 +219,18 @@
       <option name="project" value="LOCAL" />
       <updated>1596507788772</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="chore(release): 0.2.0">
+      <created>1596507967148</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1596507967148</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -231,26 +247,34 @@
       <screen x="0" y="23" width="1680" height="991" />
     </state>
     <state x="585" y="188" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.991@0.23.1680.991" timestamp="1590184890532" />
-    <state x="869" y="24" key="CommitChangelistDialog2" timestamp="1596507788592">
+    <state x="869" y="24" key="CommitChangelistDialog2" timestamp="1596507966788">
       <screen x="0" y="23" width="1920" height="1017" />
     </state>
-    <state x="869" y="24" key="CommitChangelistDialog2/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1017@0.23.1920.1017" timestamp="1596507788592" />
-    <state width="1232" height="304" key="GridCell.Tab.0.bottom" timestamp="1590184947112">
-      <screen x="0" y="23" width="1680" height="991" />
+    <state x="869" y="24" key="CommitChangelistDialog2/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1017@0.23.1920.1017" timestamp="1596507966788" />
+    <state width="1359" height="239" key="GridCell.Tab.0.bottom" timestamp="1597209617956">
+      <screen x="0" y="23" width="1920" height="1018" />
     </state>
     <state width="1232" height="304" key="GridCell.Tab.0.bottom/0.23.1680.991@0.23.1680.991" timestamp="1590184947112" />
-    <state width="1232" height="304" key="GridCell.Tab.0.center" timestamp="1590184947112">
-      <screen x="0" y="23" width="1680" height="991" />
+    <state width="1359" height="239" key="GridCell.Tab.0.bottom/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1018@0.23.1920.1018" timestamp="1597209617956" />
+    <state width="1359" height="239" key="GridCell.Tab.0.center" timestamp="1597209617956">
+      <screen x="0" y="23" width="1920" height="1018" />
     </state>
     <state width="1232" height="304" key="GridCell.Tab.0.center/0.23.1680.991@0.23.1680.991" timestamp="1590184947112" />
-    <state width="1232" height="304" key="GridCell.Tab.0.left" timestamp="1590184947111">
-      <screen x="0" y="23" width="1680" height="991" />
+    <state width="1359" height="239" key="GridCell.Tab.0.center/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1018@0.23.1920.1018" timestamp="1597209617956" />
+    <state width="1359" height="239" key="GridCell.Tab.0.left" timestamp="1597209617955">
+      <screen x="0" y="23" width="1920" height="1018" />
     </state>
     <state width="1232" height="304" key="GridCell.Tab.0.left/0.23.1680.991@0.23.1680.991" timestamp="1590184947111" />
-    <state width="1232" height="304" key="GridCell.Tab.0.right" timestamp="1590184947112">
-      <screen x="0" y="23" width="1680" height="991" />
+    <state width="1359" height="239" key="GridCell.Tab.0.left/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1018@0.23.1920.1018" timestamp="1597209617955" />
+    <state width="1359" height="239" key="GridCell.Tab.0.right" timestamp="1597209617956">
+      <screen x="0" y="23" width="1920" height="1018" />
     </state>
     <state width="1232" height="304" key="GridCell.Tab.0.right/0.23.1680.991@0.23.1680.991" timestamp="1590184947112" />
+    <state width="1359" height="239" key="GridCell.Tab.0.right/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1018@0.23.1920.1018" timestamp="1597209617956" />
+    <state x="905" y="286" width="584" height="486" key="find.popup" timestamp="1597208411420">
+      <screen x="0" y="23" width="1920" height="1018" />
+    </state>
+    <state x="905" y="286" width="584" height="486" key="find.popup/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1018@0.23.1920.1018" timestamp="1597208411420" />
     <state x="517" y="134" key="new project wizard" timestamp="1589342628779">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
