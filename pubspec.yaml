@@ -1,6 +1,6 @@
 name: flutter_mixpanel
 description: Flutter Plugin for Mixpanel Native
-version: 0.2.0+2
+version: 0.2.0+3
 homepage: https://github.com/amondnet/flutter_mixpanel
 
 environment:
@@ -32,7 +32,7 @@ flutter:
         package: net.amond.flutter_mixpanel
         pluginClass: FlutterMixpanelPlugin
       ios:
-        pluginClass: FlutterMixpanePlugin
+        pluginClass: FlutterMixpanelPlugin
 #builders:
 #  json_serializable: ^3.2.5
 
