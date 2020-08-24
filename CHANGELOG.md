@@ -1,3 +1,7 @@
+## 0.2.0+2
+
+- fix(ios): missing plugin
+
 ## 0.2.0+1
 
 - fix: reset error
