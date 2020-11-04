@@ -1,6 +1,6 @@
 name: flutter_mixpanel
 description: Flutter Plugin for Mixpanel Native
-version: 0.2.0+3
+version: 0.3.0
 homepage: https://github.com/amondnet/flutter_mixpanel
 
 environment:

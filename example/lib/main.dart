@@ -50,6 +50,12 @@ class _MyAppState extends State<MyApp> {
 
       await FlutterMixpanel.people.set({'\$name': 'test2'});
       await FlutterMixpanel.people.set({'\$email': 'test@amond.net'});
+      await FlutterMixpanel.people.union({
+        'unionTest': ["test"]
+      });
+      await FlutterMixpanel.people.union({
+        'unionTest': ["test", "1"]
+      });
 
       //await FlutterMixpanel.people.set({'test': DateTime.now()});
 

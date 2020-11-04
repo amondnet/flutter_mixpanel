@@ -3,6 +3,8 @@ package net.amond.flutter_mixpanel
 import androidx.annotation.NonNull
 import android.app.Activity
 import android.content.Context
+import android.os.Build
+import androidx.annotation.RequiresApi
 import com.mixpanel.android.mpmetrics.MixpanelAPI
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.embedding.engine.plugins.activity.ActivityAware
@@ -14,6 +16,7 @@ import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry.Registrar
 import io.flutter.plugin.common.StandardMessageCodec
 import io.flutter.plugin.common.StandardMethodCodec
+import org.json.JSONArray
 import java.io.ByteArrayOutputStream
 import java.net.URI
 import java.nio.ByteBuffer
@@ -24,7 +27,8 @@ public class FlutterMixpanelPlugin(
     private var context: Context? = null) : FlutterPlugin, MethodCallHandler {
   var mixpanel: MixpanelAPI? = null
 
-  override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
+  override fun onAttachedToEngine(
+      @NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
     val channel = MethodChannel(flutterPluginBinding.binaryMessenger, "net.amond.flutter_mixpanel",
         StandardMethodCodec(MixpanelMessageCodec.instance))
     channel.setMethodCallHandler(FlutterMixpanelPlugin(flutterPluginBinding.applicationContext))
@@ -127,7 +131,7 @@ public class FlutterMixpanelPlugin(
           val properties = call.arguments as Map<String, Any>
           val property = properties["property"] as String
           val to = properties["to"]
-          it.people.set(property,to)
+          it.people.set(property, to)
           return result.success(null)
         }
         return result.error("NOT_INITIALIZED", null, null)
@@ -165,6 +169,18 @@ public class FlutterMixpanelPlugin(
         }
         return result.error("NOT_INITIALIZED", null, null)
       }
+      "people.union" -> {
+        mixpanel?.let {
+          val args = call.arguments as Map<String, Any>
+          for (key in args.keys) {
+            val collection = args[key] as Collection<*>
+            val array = JSONArray(collection)
+            it.people.union(key, array)
+          }
+          return result.success(null)
+        }
+        return result.error("NOT_INITIALIZED", null, null)
+      }
       else -> {
         return result.notImplemented()
       }
@@ -193,13 +209,17 @@ public class MixpanelMessageCodec : StandardMessageCodec() {
   companion object {
     @JvmStatic
     val instance = MixpanelMessageCodec()
+
     @JvmStatic
     val UTF8: Charset = Charset.forName("UTF8")
+
     @JvmStatic
     val DATE_TIME = 128
+
     @JvmStatic
     val URI = 129
   }
+
   override fun writeValue(stream: ByteArrayOutputStream, value: Any?) {
     if (value is Date) {
       stream.write(DATE_TIME)

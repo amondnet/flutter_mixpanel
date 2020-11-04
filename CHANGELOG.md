@@ -1,3 +1,7 @@
+## 0.3.0
+
+- feat(android): people union
+
 ## 0.2.0+2
 
 - fix(ios): missing plugin
