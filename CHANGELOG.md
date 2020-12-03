@@ -1,7 +1,8 @@
-## 0.3.1
+## 0.4.0
 
 - feat: alias
 - feat: distinctId
+- chore(deps): mixpanel_swift 2.8.1, ios deployment tagret 9.0
 
 ## 0.3.0
 
