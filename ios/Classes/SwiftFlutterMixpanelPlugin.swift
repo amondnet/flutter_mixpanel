@@ -230,6 +230,28 @@ public class SwiftFlutterMixpanelPlugin: NSObject, FlutterPlugin {
             Mixpanel.mainInstance().reset();
             result(true);
 
+          } else if ( call.method == "alias" ) {
+            let arguments = call.arguments as! Dictionary<String, String>?;
+            if ( arguments == nil ) {
+                result("arguments is required");
+                return;
+            }
+            let alias = arguments!["alias"]!;
+            let original = arguments!["original"];
+
+            let mixpanel = Mixpanel.mainInstance()
+
+            mixpanel.createAlias(alias, distinctId: original ?? mixpanel.distinctId);
+            result(true);
+
+          } else if ( call.method == "distinctId" ) {
+            
+            result(Mixpanel.mainInstance().distinctId);
+
+          } else if ( call.method == "people.distinctId" ) {
+            
+            result(FlutterMethodNotImplemented);
+
           } else {
             result(FlutterMethodNotImplemented);
           }

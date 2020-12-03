@@ -1,3 +1,8 @@
+## 0.3.1
+
+- feat: alias
+- feat: distinctId
+
 ## 0.3.0
 
 - feat(android): people union

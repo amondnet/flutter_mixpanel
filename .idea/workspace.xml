@@ -1,12 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddf70060-5336-441f-a1e4-361c3aab6472" name="Default Changelist" comment="">
+    <list default="true" id="ddf70060-5336-441f-a1e4-361c3aab6472" name="Default Changelist" comment="feat(android): people union">
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/0/0020cbd7236d37a7913938cbb103aea0ecb5f55f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/0398ccd0f49298b10a3d76a47800d2ebecd49859" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0b3b2877555a5f870242186e404e35c0deb3a18b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/2/12a2fc00360d502976e41fc17f6b2195065f7d7b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/3/13f012f60e18f38225ce59137db2e07d5d70b29c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/6/163bc2405073f93bdee7cbfcf434ff5fe7b04ecc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/8/18eeb8deba1f064397982dc5f48076f01ca13da9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/a/1a64be29f10289d1201ab1562fad434818823509" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/0/2045984b7d4753dd82c47263cec8ba545c28ca07" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/7/27e18628f6eb39348095fb0428b29827e20fdd16" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/8/288c02ea61e179659ae25d8bba1c2043ac03577c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/d/2d9afa53a36edaadb63ee3322e525018a6e5fbdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/1/31c70ca2bf51ed55884be4cda7ac864479633793" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/4/34aa132951d7601ccebfe2d9730a8ff67d1ffe78" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/c/3cdbcb57062e35514641c79da4a0a1365ee8ded6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/2/426f2bfd97a74addf5dd4823e9302276b562e469" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442effb1a73a603fb565e35baa40ffe991c97925" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4bfeab5ebe392fecbfb971f6d624cc7f98c5b0fd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/c/4c79c3f464c24fa36997787b04d04d87cbe81580" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/2/626d28a4c5566cfcfccba4e4ab78f12396f0362a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/4/646370806030463be3741c27c67d46ee88396c6e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/68a25a94c1cc0ef836b1b74c1b719c9e4b3423b2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/c/6c0b19e1c67b2bbc3bc390df1eb877b76a7542dd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/713ad3fe69886a08d88c72af382500e328f35cfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/744bf0be967ff6116ed11e1d6de1f0f6feec450b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/77e9b89dd42745517e5b2cd000fb012dbc68c75a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/77fb2915d5ba825b702c890f486d6f3684a114e6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/f/7f1dfe9671149f8d9c88462c92762aed23bf28d2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/853a9041dcf81c03edb44066add69a52af9f9b1f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/a/8a90307021eddb0e681c49c58ca81b018054ac94" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8b281575d8ca899ae14661dccc7f613da707a565" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8baf66e8abd00c95fd4b8404e99c74701e31309a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/97d2bc29d7c806aa39c466975ca62a0955865ba8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/97d2c2c14e4b55c8506683eec3e0f4326d78e7cb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/3/a35abf1447e056db5184cc974e2d936424f18658" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/3/a3dc947022e4e03dce00316a2858f98ac482887c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/b/ab09011fa121d0a2bb9fa4ca76094f2482b902b7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/ae9e8a4b8b9f145cb19db294e3966c8834b2aa37" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/7/b740f1e20a40ebff4ccbf7af0fd63a8a84054572" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/a/ba9e36a82b2fd019a1bfd81c882c13c3d721ac1f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/c/bce4ffcc3a6f8770701e2b33f47d7960a15811f0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c1c78778a0cef1e5344166792d1d823fdcb8b109" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c380184d65d085cf9888a6b43111ec4d5a14b2d5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/7/c7120209128e50724a92a95b374cc50b9ad3b0a4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df77e548070ea988d1d812fe90e9bfe0986dd0ca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e4887c6603dec1dd581652edb373dc6d0c03a60c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e8e045469170189f1d6ef12576bd01af132b1018" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/effc4a1f532c1cba8d1dd32e235ef452b14be28c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/a/fa00fc3664ae659f3e9223ae671c8bf17757b750" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/0/0/0020cbd7236d37a7913938cbb103aea0ecb5f55f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/0/3/0398ccd0f49298b10a3d76a47800d2ebecd49859" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/0/b/0b3b2877555a5f870242186e404e35c0deb3a18b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/1/2/12a2fc00360d502976e41fc17f6b2195065f7d7b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/1/3/13f012f60e18f38225ce59137db2e07d5d70b29c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/1/6/163bc2405073f93bdee7cbfcf434ff5fe7b04ecc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/1/8/18eeb8deba1f064397982dc5f48076f01ca13da9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/1/a/1a64be29f10289d1201ab1562fad434818823509" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/2/0/2045984b7d4753dd82c47263cec8ba545c28ca07" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/2/7/27e18628f6eb39348095fb0428b29827e20fdd16" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/2/8/288c02ea61e179659ae25d8bba1c2043ac03577c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/2/d/2d9afa53a36edaadb63ee3322e525018a6e5fbdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/3/1/31c70ca2bf51ed55884be4cda7ac864479633793" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/3/4/34aa132951d7601ccebfe2d9730a8ff67d1ffe78" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/3/c/3cdbcb57062e35514641c79da4a0a1365ee8ded6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/4/2/426f2bfd97a74addf5dd4823e9302276b562e469" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/4/4/442effb1a73a603fb565e35baa40ffe991c97925" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/4/b/4bfeab5ebe392fecbfb971f6d624cc7f98c5b0fd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/4/c/4c79c3f464c24fa36997787b04d04d87cbe81580" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/6/2/626d28a4c5566cfcfccba4e4ab78f12396f0362a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/6/4/646370806030463be3741c27c67d46ee88396c6e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/6/8/68a25a94c1cc0ef836b1b74c1b719c9e4b3423b2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/6/c/6c0b19e1c67b2bbc3bc390df1eb877b76a7542dd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/7/1/713ad3fe69886a08d88c72af382500e328f35cfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/7/4/744bf0be967ff6116ed11e1d6de1f0f6feec450b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/7/7/77e9b89dd42745517e5b2cd000fb012dbc68c75a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/7/7/77fb2915d5ba825b702c890f486d6f3684a114e6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/7/f/7f1dfe9671149f8d9c88462c92762aed23bf28d2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/8/5/853a9041dcf81c03edb44066add69a52af9f9b1f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/8/a/8a90307021eddb0e681c49c58ca81b018054ac94" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/8/b/8b281575d8ca899ae14661dccc7f613da707a565" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/8/b/8baf66e8abd00c95fd4b8404e99c74701e31309a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/9/7/97d2bc29d7c806aa39c466975ca62a0955865ba8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/9/7/97d2c2c14e4b55c8506683eec3e0f4326d78e7cb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/a/3/a35abf1447e056db5184cc974e2d936424f18658" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/a/3/a3dc947022e4e03dce00316a2858f98ac482887c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/a/b/ab09011fa121d0a2bb9fa4ca76094f2482b902b7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/a/e/ae9e8a4b8b9f145cb19db294e3966c8834b2aa37" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/b/7/b740f1e20a40ebff4ccbf7af0fd63a8a84054572" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/b/a/ba9e36a82b2fd019a1bfd81c882c13c3d721ac1f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/b/c/bce4ffcc3a6f8770701e2b33f47d7960a15811f0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/c/1/c1c78778a0cef1e5344166792d1d823fdcb8b109" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/c/3/c380184d65d085cf9888a6b43111ec4d5a14b2d5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/c/7/c7120209128e50724a92a95b374cc50b9ad3b0a4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/d/f/df77e548070ea988d1d812fe90e9bfe0986dd0ca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/e/4/e4887c6603dec1dd581652edb373dc6d0c03a60c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/e/8/e8e045469170189f1d6ef12576bd01af132b1018" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/e/f/effc4a1f532c1cba8d1dd32e235ef452b14be28c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/f/a/fa00fc3664ae659f3e9223ae671c8bf17757b750" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/net/amond/flutter_mixpanel/FlutterMixpanelPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/net/amond/flutter_mixpanel/FlutterMixpanelPlugin.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_mixpanel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftFlutterMixpanelPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftFlutterMixpanelPlugin.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/mixpanel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/mixpanel.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,8 +178,10 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/example" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -82,7 +192,7 @@
       <recent name="$PROJECT_DIR$/test" />
     </key>
   </component>
-  <component name="RunManager" selected="Flutter.main.dart">
+  <component name="RunManager" selected="Flutter.example/lib/test_main.dart">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -162,6 +272,14 @@
       <workItem from="1584515441178" duration="1850000" />
       <workItem from="1589342027933" duration="1882000" />
       <workItem from="1597207972912" duration="1372000" />
+      <workItem from="1598002055034" duration="722000" />
+      <workItem from="1598231818420" duration="892000" />
+      <workItem from="1599540790992" duration="617000" />
+      <workItem from="1600143094810" duration="1006000" />
+      <workItem from="1604475660657" duration="538000" />
+      <workItem from="1604478960314" duration="940000" />
+      <workItem from="1604485542272" duration="502000" />
+      <workItem from="1606978061723" duration="2711000" />
     </task>
     <task id="LOCAL-00001" summary="kotlin 1.3">
       <created>1557972281766</created>
@@ -226,7 +344,28 @@
       <option name="project" value="LOCAL" />
       <updated>1596507967148</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix(ios): missing plugin">
+      <created>1598231916387</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1598231916387</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix(ios): missing plugin">
+      <created>1598232079543</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1598232079543</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat(android): people union">
+      <created>1604479859807</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1604479859807</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,45 +379,10 @@
     <MESSAGE value="time 추가" />
     <MESSAGE value="feat: android" />
     <MESSAGE value="chore(release): 0.2.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore(release): 0.2.0" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="585" y="188" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590184890532">
-      <screen x="0" y="23" width="1680" height="991" />
-    </state>
-    <state x="585" y="188" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.991@0.23.1680.991" timestamp="1590184890532" />
-    <state x="869" y="24" key="CommitChangelistDialog2" timestamp="1596507966788">
-      <screen x="0" y="23" width="1920" height="1017" />
-    </state>
-    <state x="869" y="24" key="CommitChangelistDialog2/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1017@0.23.1920.1017" timestamp="1596507966788" />
-    <state width="1359" height="239" key="GridCell.Tab.0.bottom" timestamp="1597209617956">
-      <screen x="0" y="23" width="1920" height="1018" />
-    </state>
-    <state width="1232" height="304" key="GridCell.Tab.0.bottom/0.23.1680.991@0.23.1680.991" timestamp="1590184947112" />
-    <state width="1359" height="239" key="GridCell.Tab.0.bottom/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1018@0.23.1920.1018" timestamp="1597209617956" />
-    <state width="1359" height="239" key="GridCell.Tab.0.center" timestamp="1597209617956">
-      <screen x="0" y="23" width="1920" height="1018" />
-    </state>
-    <state width="1232" height="304" key="GridCell.Tab.0.center/0.23.1680.991@0.23.1680.991" timestamp="1590184947112" />
-    <state width="1359" height="239" key="GridCell.Tab.0.center/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1018@0.23.1920.1018" timestamp="1597209617956" />
-    <state width="1359" height="239" key="GridCell.Tab.0.left" timestamp="1597209617955">
-      <screen x="0" y="23" width="1920" height="1018" />
-    </state>
-    <state width="1232" height="304" key="GridCell.Tab.0.left/0.23.1680.991@0.23.1680.991" timestamp="1590184947111" />
-    <state width="1359" height="239" key="GridCell.Tab.0.left/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1018@0.23.1920.1018" timestamp="1597209617955" />
-    <state width="1359" height="239" key="GridCell.Tab.0.right" timestamp="1597209617956">
-      <screen x="0" y="23" width="1920" height="1018" />
-    </state>
-    <state width="1232" height="304" key="GridCell.Tab.0.right/0.23.1680.991@0.23.1680.991" timestamp="1590184947112" />
-    <state width="1359" height="239" key="GridCell.Tab.0.right/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1018@0.23.1920.1018" timestamp="1597209617956" />
-    <state x="905" y="286" width="584" height="486" key="find.popup" timestamp="1597208411420">
-      <screen x="0" y="23" width="1920" height="1018" />
-    </state>
-    <state x="905" y="286" width="584" height="486" key="find.popup/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1018@0.23.1920.1018" timestamp="1597208411420" />
-    <state x="517" y="134" key="new project wizard" timestamp="1589342628779">
-      <screen x="0" y="23" width="1920" height="1018" />
-    </state>
-    <state x="517" y="134" key="new project wizard/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1018@0.23.1920.1018" timestamp="1589342628779" />
+    <MESSAGE value="fix: reset error" />
+    <MESSAGE value="fix(ios): missing plugin" />
+    <MESSAGE value="feat(android): people union" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(android): people union" />
   </component>
   <component name="masterDetails">
     <states>

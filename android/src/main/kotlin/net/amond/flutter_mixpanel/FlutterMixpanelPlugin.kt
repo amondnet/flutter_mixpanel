@@ -85,6 +85,29 @@ public class FlutterMixpanelPlugin(
         }
         return result.error("NOT_INITIALIZED", null, null)
       }
+      "alias" -> {
+        mixpanel?.let {
+          val args = call.arguments as Map<String, String?>
+          val alias = args["alias"]
+          val original = args["original"]
+          
+          it.alias(alias, original)
+          return result.success(null)
+        }
+        return result.error("NOT_INITIALIZED", null, null)
+      }
+      "distinctId" -> {
+        mixpanel?.let {
+          return result.success(it.distinctId)
+        }
+        return result.error("NOT_INITIALIZED", null, null)
+      }
+      "people.distinctId" -> {
+        mixpanel?.let {
+          return result.success(it.people.distinctId)
+        }
+        return result.error("NOT_INITIALIZED", null, null)
+      }
       "time" -> {
         mixpanel?.let {
           val time = call.arguments as Map<String, Any>
