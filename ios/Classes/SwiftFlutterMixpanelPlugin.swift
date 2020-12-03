@@ -250,7 +250,7 @@ public class SwiftFlutterMixpanelPlugin: NSObject, FlutterPlugin {
 
           } else if ( call.method == "people.distinctId" ) {
             
-            result(FlutterMethodNotImplemented);
+            result(Mixpanel.mainInstance().distinctId);
 
           } else {
             result(FlutterMethodNotImplemented);
