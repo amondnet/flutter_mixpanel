@@ -1,3 +1,7 @@
+## 0.4.1
+
+- fix: alias is null
+
 ## 0.4.0
 
 - feat: alias

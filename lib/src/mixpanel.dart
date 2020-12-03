@@ -67,8 +67,8 @@ class FlutterMixpanel {
     assert(alias != null);
     assert(alias.isNotEmpty);
 
-    return await _channel
-        .invokeMethod('alias', {'alias': alias, 'original': original});
+    return await _channel.invokeMethod(
+        'alias', {'alias': alias, 'original': original ?? await distinctId});
   }
 
   /// Returns the string id currently being used to uniquely identify the user associated with events sent using track(String, JSONObject).
