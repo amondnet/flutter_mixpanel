@@ -24,9 +24,9 @@ void main() {
 
     // Then
     expect(track.event, eventName);
-    expect(track.properties['bool'], "true");
-    print(track.properties['DateTime']);
-    expect(track.properties['DateTime'].runtimeType, String);
-    expect(track.properties['DateTime'].length, 19);
+    expect(track.properties!['bool'], "true");
+    print(track.properties!['DateTime']);
+    expect(track.properties!['DateTime'].runtimeType, String);
+    expect(track.properties!['DateTime'].length, 19);
   });
 }

@@ -1,3 +1,7 @@
+## 1.0.0
+
+- feat: null safety
+
 ## 0.4.1
 
 - fix: alias is null
