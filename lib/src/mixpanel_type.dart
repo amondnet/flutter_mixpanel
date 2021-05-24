@@ -4,9 +4,9 @@ part 'mixpanel_type.g.dart';
 
 @JsonSerializable(explicitToJson: true)
 class Property {
-  final Map<String, dynamic> properties;
+  final Map<String, dynamic>? properties;
 
-  Property(Map<String, dynamic> this.properties);
+  Property(this.properties);
 
   factory Property.fromJson(Map<String, dynamic> json) =>
       _$PropertyFromJson(json);
@@ -18,7 +18,7 @@ class Property {
 class Track extends Property {
   final String event;
 
-  Track(this.event, {Map<String, dynamic> properties}) : super(properties);
+  Track(this.event, {Map<String, dynamic>? properties}) : super(properties);
 
   factory Track.fromJson(Map<String, dynamic> json) => _$TrackFromJson(json);
 

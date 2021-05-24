@@ -22,7 +22,7 @@ class MixpanelMessageCodec extends StandardMessageCodec {
       buffer.putInt64(value.millisecondsSinceEpoch);
     } else if (value is Uri) {
       buffer.putUint8(_kUri);
-      final List<int> bytes = utf8.encoder.convert(value.toString());
+      final bytes = utf8.encoder.convert(value.toString());
       writeSize(buffer, bytes.length);
       buffer.putUint8List(bytes);
     } else {
