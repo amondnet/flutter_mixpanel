@@ -11,12 +11,11 @@ class FlutterMixpanel {
 
   static const FlutterMixpanelPeople people = const FlutterMixpanelPeople();
 
-  static Future<String> initialize(String token) async {
-    String response = await _channel.invokeMethod('initialize', token);
-    return response;
+  static Future<void> initialize(String token) {
+    return _channel.invokeMethod('initialize', token);
   }
 
-  static Future<String> track(String event,
+  static Future<void> track(String event,
       [Map<String, dynamic>? properties]) async {
     final track = Track(event, properties: properties);
     try {
@@ -27,19 +26,12 @@ class FlutterMixpanel {
     }
   }
 
-  static Future<String> time(String event) async {
-    try {
-      final response =
-          await _channel.invokeMethod('time', Time(event).toJson());
-      return response;
-    } catch (e) {
-      throw e;
-    }
+  static Future<void> time(String event) {
+    return _channel.invokeMethod('time', Time(event).toJson());
   }
 
-  static Future<String> identify(String distinctId) async {
-    final response = await _channel.invokeMethod('identify', distinctId);
-    return response;
+  static Future<void> identify(String distinctId) {
+    return _channel.invokeMethod('identify', distinctId);
   }
 
   /// Reset generates a new random distinct_id and clears super properties.
